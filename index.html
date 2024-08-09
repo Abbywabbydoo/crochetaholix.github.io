@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crochetaholix.tt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+        <img src="logo (2).png">
+        </a>
+        
+    </header>
+    
+ <nav class="navbar">      
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="guidelines.html">Guidelines</a></li>
+        <li><a href="custom.html">Custom Orders</a></li>
+    </ul>
+ </nav>
+
+<hr>
+    
+    <main>
+<h1>Shop at Crochetaholix.tt for all your crochet needs—crafted with love, stitched with passion.</h1>
+<a href="products.html">
+<button>SHOP NOW</button>
+</a>
+
+<h2>View some of our featured products</h2>
+<div class="gallery-wrap">
+    <img src="left.png" id="back">
+     <div class="gallery">
+        <div>
+            <a href="orderform.html">
+           <span><img src="top.jpg"></span>
+            </a>
+
+
+           <a href="orderform.html">
+           <span><img src="beanie.jpg"></span>
+            </a>
+
+           <a href="orderform.html">
+           <span><img src="flower.jpg"></span>
+           </a>
+        </div>
+        <div>
+            <a href="orderform.html">
+           <span><img src="octopus.jpg"></span>
+            </a>
+
+           <a href="orderform.html">
+           <span><img src="shrug.jpg"></span>
+           </a>
+
+           <a href="orderform.html">
+           <span><img src="bunny.jpg"></span>
+           </a>
+        </div>
+    </div>
+    <img src="right.png" id="next">
+</div>
+
+<script>
+    let scrollContainer= document.querySelector(".gallery");
+    let back= document.getElementById("back");
+    let next= document.getElementById("next");
+
+    scrollContainer.addEventListener("wheel",(evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+
+    next.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+    });
+    
+    back.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+    });
+
+</script>
+
+
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Follow Crochetaholix</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/crochetaholix.tt/">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@crochetaholix_.tt?_t=8ojdwkuKAJZ&_r=1">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

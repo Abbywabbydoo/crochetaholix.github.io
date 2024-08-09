@@ -1,0 +1,214 @@
+body {
+    background-color: rgb(252, 245, 236);
+    font-family:"Balsamiq Sans", sans-serif;
+    color: rgb(216, 5, 216);
+      margin: 0;
+    padding: 0 10px;
+
+}
+
+header {
+    background-color: rgb(235, 195, 236);   
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+main h2 {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.footer-col-1 ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Makes the list horizontal */
+    gap: 20px; /* Adds space between list items */
+}
+
+.footer-col-1 ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Set the desired color for the links */
+}
+
+.footer-col-1 ul li a:hover {
+    color: #4751ac; /* Changes color on hover */
+}
+
+
+.navbar {
+    text-align: center;
+    background-color: rgb(235, 195, 236);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: rgb(150, 73, 124);
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(219, 184, 219);
+    border-radius: 5px;
+}
+
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: rgb(238, 211, 230);
+    color: darkorchid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: rgb(218, 193, 210);
+}
+
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+    
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+#back, #next{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.col-4 h4 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.col-4 p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(150, 73, 124);
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+.footer{
+    background-color:rgb(238, 211, 230) ;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
